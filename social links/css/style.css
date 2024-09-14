@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: inter;
+    src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    background-color: #141414;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    
+}
+
+.card{
+    background-color: #1f1f1f;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+/* small */  @media (min-width:340px){
+    .card{
+        width: 320px;
+        height: 550px;
+    }
+} 
+/* small */
+@media (min-width:768px){
+    .card{
+        width: 300px;
+        height: 570px;
+        
+    }
+}
+
+/* medium */
+@media (min-width:992px){
+    .card{
+        width: 300px;
+        height: 570px;
+        
+    }
+}
+
+/* large */
+@media (min-width:1200px){
+    .card{
+        width:300px;
+    }
+}
+
+.card .profile img{
+    width: 11vh;
+    height: 11vh;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50% , 30px);
+    -webkit-transform: translate(-50% , 30px);
+    -moz-transform: translate(-50% , 30px);
+    -ms-transform: translate(-50% , 30px);
+    -o-transform: translate(-50% , 30px);
+}
+/* small */  @media (min-width:340px ){
+    .card .profile img{
+        width: 100px;
+        height: 100px;
+}
+}
+@media (min-width:768px){
+    .card .profile img{
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+.card .profile h3{
+    color: white;
+    font-family: inter;
+    font-weight: bold;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    text-transform: capitalize;
+    text-align: center;
+}
+.card .profile h6{
+    color:#c4f82a;
+    font-family: inter;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+.card .profile p{
+    color: #eaeaea;
+    font-size:12px;
+    font-family: inter;
+    text-align: center;
+}
+/* small */  @media (min-width:375px){
+    .card .profile p{
+        font-size:13px;
+
+    }
+} 
+.card .links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .links a{
+    width: 230px;
+    background-color: #333333;
+    margin: 9px auto;
+    padding: 13px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: inter;
+    font-size: 10px;
+    font-weight: 700;
+}
+/* small */  @media (min-width:375px){
+    .card .links a{
+       padding: 15px;
+       width: 270px;
+        font-size: 13px;
+    }
+} 
+/* small */
+@media (min-width:768px){
+    .card .links a{
+    width:260px ;
+        
+    }
+}
+
+/* medium */
+@media (min-width:992px){
+    .card .links a{
+        
+    }
+}
+
+/* large */
+@media (min-width:1200px){
+    .card .links a{
+
+    }
+}
+.card .links a:hover{
+    background-color: #c4f82a;
+    color: #141414;
+}
